@@ -1,0 +1,58 @@
+<div class="container-fluid">
+    <div @enterState class="row container-separator">
+        <div class="col-md-8 col-sm-12 justify-content-center ">
+            <div [ngStyle]="{'background-image':'url('+ proyecto.url +')'}" class="img-container">
+            </div>
+            <div class="description">
+                <div class="justify-content-center caption1">
+                    {{proyecto.caption}}
+                </div>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis culpa, aliquid sapiente in nostrum quas doloremque similique non voluptates, rerum eaque corporis maxime minima repellendus nulla, atque iste temporibus nobis!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat quis odio dolorem deserunt, fugiat, maxime sint enim dignissimos hic corporis omnis aperiam pariatur perspiciatis consequuntur dicta aut rerum facere et?</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 caption-row">
+    
+            <div class="caption">
+                {{proyecto.caption}}
+            </div>
+            <h3>PROJECT DETAILS</h3>
+            <div class="info-icon">
+                <i class="fas fa-user"></i> 
+                <span class="client"> <b>Client</b></span>
+                <span class="name-client">{{proyecto.nameClient}}</span>
+            </div>
+            
+            <div class="info-icon">
+                <i class="far fa-calendar-alt"></i>
+                <span><b>Created</b> </span>
+                <span>{{proyecto.date}}</span>
+            </div>
+            
+            <div class="info-icon">
+                <i class="fas fa-link"></i>
+                <span><b>Live Demo</b> </span>
+                <a [routerLink]="['/home']">   See Project</a>
+            </div>
+
+            <div class="info-icon">
+                <i class="fas fa-check-double"></i>
+                <span><b>Status</b> </span>
+                <span>{{proyecto.status}}</span>
+            </div>
+        
+            <div class="col-md-12 social-profile">
+                <span>Social profiles</span> 
+                <a href="#" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+</div>

@@ -1,0 +1,364 @@
+/*SECCTION TITLE*/
+.section{
+    padding: 30px 0;
+    font-family:'RozhaOne-Regular';
+}
+.container-section {
+    padding: 40px 40px;
+  }
+ 
+.section-title {
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+}
+.section-title:before {
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 45%;
+}
+
+.section-title{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+.section-title h2 {
+    background: #fff none repeat scroll 0 0;
+    color: var(--colorcentral);
+    font-size: 30px;
+    font-family:'RozhaOne-Regular';
+    border: 2px solid var(--colorbtn);
+    display: inline-block;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    letter-spacing: .1em;
+    padding: 0 30px;
+    position: relative;
+    
+}
+/*PHOTO*/
+.perfil{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.perfil img{
+    border: 4px solid var(--colorcentral);
+    width: 90%;
+    display: block;
+    margin: auto;
+    background-size: cover;
+    background-position: absolute;
+    -webkit-box-shadow: -4px 24px 53px 2px rgba(0,0,0,0.56);
+    -moz-box-shadow: -4px 24px 53px 2px rgba(0,0,0,0.56);
+    box-shadow: -4px 24px 53px 2px rgba(0,0,0,0.56);
+    margin-bottom: 30px;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.perfil img:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.perfil h3{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-family:'RozhaOne-Regular';
+    color:var(--colorbtn);
+}
+
+.perfil .btn-standar{
+    margin-bottom: 30px;
+    transition: 1s ease;
+ }
+
+.info-block{
+    margin-bottom: 28px;
+}
+
+.about-info .info-icon{
+    padding: 20px;
+    float: left; 
+    display: inline-block;
+    vertical-align: middle;
+}
+.info-icon i{
+    color: white;
+    font-size: 20px;
+}
+.info-text{
+    padding-left: 70px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    color:var(--colorbtn);
+}
+
+.info-text span {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+/*Social profiles*/
+
+.social-profile{
+    
+    margin-bottom: 30px;
+    float: left;
+    text-align: justify;
+}
+.social-profile span {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 13px;
+    letter-spacing: 3px;
+    color:var(--colorbtn);
+   
+}
+.social-profile a .fa{
+    display: inline-block;
+    padding: 6px;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+    color:var(--colorbtn);
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;    
+    transition: .2s;
+}
+
+.social-profile:hover a .fa{
+    filter: blur(1px);
+  }
+  .social-profile a:hover .fa{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .4);
+    color: white;
+    filter: none;
+  }
+  .social-profile a .fa-instagram:hover{
+    background: linear-gradient(45Deg, #405de6, #5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+  }
+  .social-profile a .fa-facebook-official:hover{
+    background: var(--facebook);
+  }
+  .social-profile a .fa-twitter:hover{
+    background: var(--twitter);
+  }
+  .social-profile a .fa-linkedin:hover{
+    background: var(--linkedin);
+  }
+  .social-profile a .fa-github:hover{
+      background: var(--Github);
+  }
+
+.info-description{
+    margin-top: 30px;
+}
+
+.info-description p{
+    text-align: justify !important;
+    width: 100%;
+    line-height: 1.7em;
+    font-size: 16px;
+    color:var(--colorbtn);
+}
+
+
+/*=============================================
+CIRCLES
+=============================================*/
+
+.mh-professional-skills {
+    text-align: center;
+}
+
+.mh-professional-skills h2 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 30px;
+    margin: auto;
+    letter-spacing: .1em;
+}
+
+.mh-professional-skills h2{
+ 
+    margin-block-start: 1.03em;
+    margin-block-end: 1.03em;
+}
+
+.mh-professional-progress li {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+    color:var(--colorbtn);
+}
+
+.mh-progress.mh-progress-circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.mh-progress {
+    margin-bottom: 10px;
+    font: 500 1.1428571429em/1 Cinzel, cursive;
+}
+
+
+.dark-vertion .mh-progress path:nth-child(1) {
+    stroke: rgba(255, 255, 255, 0.5);
+}
+
+.mh-progress path:nth-child(2) {
+    stroke:var(--colorcentral);
+}
+
+.mh-progress .progressbar-text {
+    color:var(--colorbtn) !important;
+}
+
+/*=============================================
+     MEDIAS QUERYS
+=============================================*/
+@media screen and (max-width:480px){
+    .mh-professional-progress li {
+        width: 50%;
+    }
+    .perfil img{
+        height: 250px;
+        width: 180px;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    
+.section-title h2 {
+    font-size: 20px !important;
+}
+.perfil img{
+    height: 250px;
+    width: 200px;
+}
+.perfil h3{
+    font-size: 14px; 
+}
+.about-info .info-icon{
+    padding: 15px;
+}
+.info-icon i{
+    font-size: 14px;
+}
+.info-text{
+    font-size: 12px;
+}
+.social-profile{
+    text-align: center;
+}
+.social-profile span {
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+.social-profile a .fa{
+    margin-right: 3px;
+    font-size: 18px;
+    padding: 5px;
+}
+.info-description{
+    text-align: center;
+
+}
+.info-description p{
+    font-size: 14px;
+    text-align: center !important;
+}
+.info-description img{
+    height:40px;
+    width:120px;
+}
+/*skills*/
+
+.mh-professional-skills h2 {
+    font-size: 20px;
+}
+
+  }
+
+  @media screen and (max-width:768px){
+    
+    .section-title h2 {
+        font-size: 26px !important;
+    }
+    .perfil img{
+        height: 280px;
+        width: 230px;
+    }
+    .perfil h3{
+        font-size: 16px; 
+    }
+    .about-info .info-icon{
+        padding: 18px;
+    }
+    .info-icon i{
+        font-size: 16px;
+    }
+    .info-text{
+        font-size: 16px;
+    }
+    .social-profile{
+        text-align: center;
+    }
+    .social-profile span {
+        font-size: 16px;
+        text-align: center;
+        display: block;
+    }
+    .social-profile a .fa{
+        margin-right: 3px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .info-description p{
+        font-size: 16px;
+    }
+
+    .info-description img{
+        height:40px;
+        width:120px;
+    }
+    /*skills*/  
+    .mh-professional-skills h2 {
+        font-size: 24px;
+    }
+
+ }
+
+ @media screen and (max-width:992px){
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .mh-professional-skills h2 {
+        font-size:30px;
+    }
+
+
+}

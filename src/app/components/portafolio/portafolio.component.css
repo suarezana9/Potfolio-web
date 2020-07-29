@@ -1,0 +1,65 @@
+.section{
+    padding: 30px 0;
+   
+}
+.container-section {
+    padding: 40px 60px;
+  }
+
+.section-title {
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+}
+.section-title:before {
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    
+}
+
+.section-title{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+.section-title h2 {
+    background: #fff none repeat scroll 0 0;
+    color:var(--colorcentral);
+    font-family:'RozhaOne-Regular';
+    border: 2px solid var(--colorbtn);
+    display: inline-block;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 30px;
+    position: relative;
+    letter-spacing: .1em;
+}
+
+/*=============================================
+     MEDIAS QUERYS
+=============================================*/
+
+@media screen and (max-width:576px){
+    .section-title h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .section-title h2 {
+        font-size: 26px !important;
+    }
+}
+@media screen and (max-width:992px){
+    .section-title h2 {
+        font-size: 30px;
+    }
+   
+  }

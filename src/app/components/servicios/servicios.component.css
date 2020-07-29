@@ -1,0 +1,247 @@
+.section{
+    padding: 30px 0;
+    font-family:'RozhaOne-Regular';
+}
+.container-section {
+    padding: 40px 60px;
+  }
+
+.section-title {
+    
+    position: relative;
+    text-align: center;
+}
+.section-title:before {
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    
+}
+
+.section-title{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+
+.section-title h2 {
+    background: #fff none repeat scroll 0 0;
+    color:var(--colorcentral);
+    border: 2px solid var(--colorbtn);
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .1em;
+    font-size: 30px;
+    font-family:'RozhaOne-Regular';
+    line-height: 40px;
+    margin: 0;
+    padding: 0 30px;
+    position: relative;
+}
+.container-section .card{
+    top: 35px;
+    position: relative;
+    height: 400px;
+    background: var(--bodycolor);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+}
+.container-section .box1{
+    background: url("/assets/img/ux.jpeg") no-repeat center center;
+    background-size: cover;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.container-section .box1:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.container-section .box2{
+    background: url("/assets/img/woman-programming.jpg") no-repeat center center;
+    background-size: cover;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.container-section .box2:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.container-section .box3{
+    background: url("/assets/img/seo.jpeg") no-repeat center center;
+    background-size: cover;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.container-section .box3:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.overlay{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(8, 3, 3, 0.507);
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    position: absolute;
+}
+.container-section .card:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background:linear-gradient( var(--colorcentral), transparent,transparent,transparent,transparent, var(--colorcentral));  */
+    z-index: -1;
+    transition: 2s;
+}
+.container-section .card:after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    background:var(--bodycolor);
+    z-index: -1;
+}
+.container-section .card:hover:before{
+    transform: rotate(90deg);
+}
+.card .service-box-content{
+    position: relative;
+    padding:25px;
+    z-index: 3;
+}
+.card .service-box-content span i{
+    position:absolute;
+    top: 30px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: rgba(10, 9, 9, 0.144);
+    transition: 0.5s;
+}
+.card:hover .service-box-content span i{
+    top: -50px;
+}
+.card .service-box-content h3{
+    margin: 0 0 10px;
+    font-family:'RozhaOne-Regular';
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color:var(--bodycolor);
+
+}
+.card .service-box-content p{
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+    z-index: 3;
+    color:rgba(255, 250, 250, 0.801) !important;
+}
+.card .service-box-content .btn{
+position: relative;
+margin:30px 0 0;
+text-decoration: none;
+display: inline-block;
+transition:0.7s;
+transform: translate(-40px);
+opacity: 0;
+visibility: hidden;
+z-index: 2;
+}
+.card:hover .service-box-content .btn{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.card .service-box-content a:hover{
+    color: var (--bodycolor);
+}
+
+/*=============================================
+     MEDIAS QUERYS
+=============================================*/
+@media screen and (max-width:480px){
+    
+    .card .service-box-content h3{
+        font-size: 18px !important;
+        margin-top: 15px !important;
+      
+    }
+    .card .service-box-content p{
+        padding: 5px;
+        font-size: 12px !important;
+    }
+
+}
+
+@media screen and (max-width:576px){
+    .section-title h2 {
+        font-size: 20px;
+    } 
+    .col-md-6 {
+        margin-bottom: 25px !important;
+    }
+    .card .service-box-content h3{
+        font-size: 22px;
+    }
+    .card .service-box-content p{
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .section-title h2 {
+        font-size: 26px !important;
+    }
+    .col-md-6 {
+        margin-bottom: 20px !important;
+    }
+    .card .service-box-content h3{
+        font-size: 22px;
+        padding: 10px;
+    }
+    .card .service-box-content p{
+        padding: 25px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .col-lg-4{
+        margin-bottom: 20px !important;
+    } 
+    .card .service-box-content h3{
+    
+        font-size: 24px;
+        padding: 10px;
+    }
+    .card .service-box-content p{
+        padding: 25px;
+        font-size: 18px;
+    }
+}

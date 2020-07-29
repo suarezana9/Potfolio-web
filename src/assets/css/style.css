@@ -1,0 +1,487 @@
+/*FONTS*/
+@font-face{
+  font-family: 'RozhaOne-Regular';
+  src: url(../css/fonts/RozhaOne-Regular.ttf);
+}
+/*COLORES PREDEFINIDOS*/
+:root{
+  --backColor: #AB987A;
+  --bodycolor:#ffffff;
+  --colorcentral: #94acbc;
+  --facebook: #3b5998;
+  --twitter:#00acee;
+  --linkedin:#007bb5;
+  --Github:#171515;
+  --colorbtn: #5c7484;
+  
+}
+
+.backColor{
+  background-color:#AB987A;
+
+}
+.colorcentral{
+  background-color: #94acbc;
+  color: black !important;
+}
+.colorbody{
+ background-color: #d4f3ef;
+}
+html{
+  scroll-behavior: smooth;
+}
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body{
+ background-color: var(--bodycolor);
+ font-family: 'RozhaOne-Regular';
+ font-weight: 400;
+ letter-spacing: 1px;
+}
+
+.section-separator{
+  padding: 200px 0;
+}
+
+.btn-standar {
+  background-color: var(--colorcentral);
+  padding: 8px 30px;
+  color: white !important;
+  font-size: 16px;
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  border: 1.5px solid var(--colorcentral) ;
+  visibility: visible;
+  animation-duration: 0.8s; 
+  animation-delay: 0.3s; 
+  animation-name: fadeInUp;
+}
+.btn-standar:hover {
+  text-decoration: none;
+  color: white;
+  background-color:#bccccc;
+  transition: color 0.7s ease;
+  transition: 1s ease;
+  transform: translateY(-3px) scale(1.05);
+}
+
+/*ESTYLE MENU*/
+
+.active{
+  font-weight: bold;
+  transition: 1s ease;
+  color:var(--colorbtn) !important;
+}
+
+.navbar{ 
+  background:var(--colorcentral);
+  transition: 2s ease;
+}
+nav ul li .nav-link{
+  margin-right: 30px;
+  font-size: 18px;
+  color:#ffffffff !important;
+}
+nav ul li .nav-link:hover{
+  color:#ffffff8f !important;
+
+   transition: 1s ease;
+   transform:translateY(-2px);
+ 
+}
+
+.header_change{
+  transition: 1s ease;
+  background: var(--colorbtn);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75); 
+ 
+}
+
+/*ESTIYLES BANNER*/
+/* .overlay{
+  top: 0;
+  right: 0;
+  left: 0;
+ background-color: rgba(0, 0, 0, .6);
+ height: 100vh;
+ width: 100%;
+ box-sizing: border-box;
+ z-index: 1;
+ position: absolute;
+} */
+
+.banner{
+  width: 100%;
+  background: url("../img/anasinfondo.png") no-repeat right fixed, var(--colorcentral); 
+  text-align: justify;
+  background-size: contain;
+  height: 100vh;
+  padding: 9rem 3 rem;
+  box-sizing: border-box;
+  color: white;
+  overflow: hidden;
+}
+.wave{
+position: absolute;
+bottom: 0;
+
+}
+.contenido{
+  margin: 0 auto 30px auto;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.contenido h1{
+  display: inline-block;
+  margin-top: 140px;
+  font-size: 66px;
+  font-weight:600;
+  font-family:'RozhaOne-Regular';
+  letter-spacing: -3px;
+}
+
+.contenido .text-1 {
+  animation: text1;
+}
+
+.contenido .text-2 {
+  animation: text2;
+}
+
+.contenido .text-1, .contenido .text-2 {
+  margin-top: 70px;
+  line-height: 70px;
+  top:17px ;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(20, end);
+  animation-iteration-count: infinite;
+}
+
+.contenido .text-1:after,
+.contenido  .text-2:after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
+.contenido p{
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+/*TEXT ANIMATIONS*/
+
+@keyframes text2 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  60%,
+  90% {
+    width: 6.2em;
+  }
+}
+@keyframes text1 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 5.2em;
+  }
+}
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/*Styles icons header*/
+.redesIcon{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.redesIcon a .fa{
+  font-size: 26px;
+  margin-bottom: 50px;
+  display: inline-block;
+  padding: 6px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+}
+.redesIcon:hover a .fa{
+  filter: blur(1px);
+}
+.redesIcon a:hover .fa{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .4);
+  filter: none;
+}
+.redesIcon a .fa-instagram:hover{
+  background: linear-gradient(45Deg, #405de6, #5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+}
+.redesIcon a .fa-facebook-official:hover{
+  background: var(--facebook);
+}
+.redesIcon a .fa-twitter:hover{
+  background: var(--twitter);
+}
+.redesIcon a .fa-linkedin:hover{
+  background: var(--linkedin);
+}
+.redesIcon a .fa-github:hover{
+  background: var(--Github);
+}
+
+  /*FOOTER*/
+.footer{
+  height: 200px;
+  text-align: center;
+  width:100%; 
+  padding: 0 20px;
+  bottom:0; 
+  left:0; 
+  }
+.footer a .fa{
+  margin-top: 60px;
+  font-size: 24px;
+  display: inline-block;
+  padding: 4px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+  }
+  
+.footer a:hover .fa{
+  filter: blur(1px);
+}
+.footer a:hover .fa{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, .4);
+  filter: none;
+}
+.footer a .fa-instagram:hover{
+  background: linear-gradient(45Deg, #405de6, #5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+}
+.footer a .fa-facebook-official:hover{
+  background: var(--facebook);
+}
+.footer a .fa-twitter:hover{
+  background: var(--twitter);
+}
+.footer a .fa-linkedin:hover{
+  background: var(--linkedin);
+}
+.footer a .fa-github:hover{
+  background: var(--Github);
+}
+  .footer p{
+    margin-top: 14px;
+    color: white;
+  }
+
+  /*=============================================
+     MEDIAS QUERYS
+=============================================*/
+ @media only screen and (max-width: 405px){
+  .banner{
+    background-size: cover;
+    height: 90vh;
+    padding: 9rem 3 rem;
+    box-sizing: border-box;
+  }
+  .wave{
+    position: absolute;
+    bottom: 70px !important;
+    
+    
+    }
+  .contenido h1{
+    font-size: 34px !important;
+  }
+  .contenido p{
+    font-size: 12px !important;
+  }
+  .contenido .text-1, .contenido .text-2 {
+    top:25px !important;
+  }
+
+  @keyframes text2 {
+    0%,
+    50%,
+    100% {
+      width: 0 !important;
+    }
+    60%,
+    90% {
+      width: 4.6em !important;
+    }
+  }
+  @keyframes text1 {
+    0%,
+    50%,
+    100% {
+      width: 0 !important;
+    }
+    10%,
+    40% {
+      width: 4.4em !important;
+    }
+  }
+} 
+
+  @media screen and (max-width:576px){
+    .navbar-brand img{
+      height: 30px;
+      width: 45px;
+    }
+    .banner{
+      background-size: cover;
+      padding: 9rem 3 rem;
+    }
+    .wave{
+      bottom: -3px;
+    }
+
+    .contenido h1{
+      font-size: 30px;
+    }
+    .contenido .text-1, .contenido .text-2 {
+      top:26px ;
+    }
+    @keyframes text2 {
+      0%,
+      50%,
+      100% {
+        width: 0;
+      }
+      60%,
+      90% {
+        width: 5.6em;
+      }
+    }
+    @keyframes text1 {
+      0%,
+      50%,
+      100% {
+        width: 0;
+      }
+      10%,
+      40% {
+        width: 4.7em;
+      }
+    }
+    .contenido p{
+      margin-top: 12px;
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .redesIcon a .fa{
+      font-size: 18px;
+    }
+
+    .btn-standar{
+      font-size: 14px;
+    }
+    .footer a .fa{
+      font-size: 18px;
+      }
+  }
+
+  @media screen and (max-width:768px){
+  
+    .navbar-brand img{
+      height: 30px;
+      width: 45px;
+    }
+    .banner{
+      background-size: cover;
+      padding: 9rem 3 rem;
+    }
+    .wave{
+      bottom: -3px;
+    }
+
+    .contenido h1{
+      margin-top: 100px;
+      font-size: 48px;
+    }
+    .contenido .text-1, .contenido .text-2 {
+      top:21px ;
+    }
+    @keyframes text2 {
+      0%,
+      50%,
+      100% {
+        width: 0;
+      }
+      60%,
+      90% {
+        width: 5.7em;
+      }
+    }
+    @keyframes text1 {
+      0%,
+      50%,
+      100% {
+        width: 0;
+      }
+      10%,
+      40% {
+        width: 4.7em;
+      }
+    }
+    .contenido p{
+      margin-top: 12px;
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    .redesIcon a .fa{
+      font-size: 18px;
+    }
+
+    .btn-standar{
+      font-size: 14px;
+    }
+    .footer a .fa{
+      font-size: 18px;
+      }
+  }

@@ -1,0 +1,24 @@
+<div class="row justify-content-center">
+
+    <div class="col-md-12 d-flex justify-content-center mb-5">
+
+        <button type="button" class="btn btn-standar" [routerLinkActive]="['active']" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+        <button type="button" class="btn btn-standar" [routerLinkActive]="['active']" [class.active]="filterBy=='Design'" (click)="filterBy='Design'">Design</button>
+        <button type="button" class="btn btn-standar" [routerLinkActive]="['active']" [class.active]="filterBy=='Development'" (click)="filterBy='Development'">Development</button>
+    
+    </div>
+
+    
+        <div class="col-md-4 col-sm-6 col-xs-12 portafolio-item" *ngFor="let proyecto of (visibleImages | imageFilter: filterBy)">
+            <a [routerLink]="['proyecto', proyecto.id]">
+                <img src="{{proyecto.url}}" class="img-fluid tn" alt="image portfolio">
+                
+                <div class="overlay">
+                    <a href="">View more</a>
+                </div>
+            </a>
+            
+        </div>
+   
+</div>
+
