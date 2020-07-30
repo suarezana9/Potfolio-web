@@ -16,34 +16,19 @@
                   <div class="contact-block"><i class="fas fa-map-marker-alt"></i><span><b>Address:</b>  CABA, Argentina</span></div>
 
               </div>
-.
-                 
-             <div class="container-fluid p-0 bg-white" id="formulario">
+
                 
-                <div class="col-lg-6 col-md-6 col-sm-12 info-form">
+                <div class="col-lg-6 col-md-6 col-sm-12 info-form p-0" id="formulario">
 
                     <h2>Ready to talk about working together?</h2>
 
-                    <form class="bg-light p-4 needs-validation" (ngSubmit)="sendEmail(f)" #f="ngForm" novalidate>
-                        
-                        <h4 class="bg-dark text-white text-center p-2">Ingrese los datos</h4>
-                        
+                    <form class="p-4 needs-validation" (ngSubmit)="sendEmail(f)" #f="ngForm" novalidate>
+                       
                         <div class="form-group">
                           
-                          <label for="usuario">Ingrese su nombre</label>
+                          <label for="usuario">Name</label>
 
-                          <input type="text" id="usuario" name="name" class="form-control" placeholder="Escriba su usuario con mínimo 2 caracteres, máximo 6 caracteres sin usar números" minlength="2" maxlength="6" pattern="(?=.*[A-Za-z]).{2,6}" [(ngModel)] ="customer.name"  required>
-
-                          <div class="valid-feedback">Valid.</div>
-                          <div class="invalid-feedback">Please fill out this field.</div>
-
-                        </div>
-
-                        <div class="form-group">
-
-                          <label for="email">Ingrese su correo electrónico:</label>
-
-                          <input type="email" id="email" class="form-control"  placeholder="Escriba su correo" name="email" [(ngModel)] ="customer.email" required>
+                          <input type="text" id="usuario" name="name" class="form-control" placeholder="Enter your name, maximum 6 characters, without using numbers" minlength="2" maxlength="6" pattern="(?=.*[A-Za-z]).{2,6}" [(ngModel)] ="customer.name"  required>
 
                           <div class="valid-feedback">Valid.</div>
                           <div class="invalid-feedback">Please fill out this field.</div>
@@ -51,9 +36,20 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="mensajes">Mensaje:</label>
+
+                          <label for="email">Email</label>
+
+                          <input type="email" id="email" class="form-control"  placeholder="Enter your email" name="email" [(ngModel)] ="customer.email" required>
+
+                          <div class="valid-feedback">Valid.</div>
+                          <div class="invalid-feedback">Please fill out this field.</div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensajes">Message:</label>
                             
-                            <textarea class="form-control" rows="5" id="mensajes" name="message" [(ngModel)]="customer.message" required></textarea>
+                            <textarea class="form-control" placeholder="Enter your message" rows="5" id="mensajes" name="message" [(ngModel)]="customer.message" required></textarea>
                             
                             <div class="valid-feedback">Valid.</div>
                             <div class="invalid-feedback">Please fill out this field.</div>
@@ -62,13 +58,12 @@
                         <div *ngIf="errorCreado" class="alert alert-danger">{{mensajeApi}}</div>
                         <div *ngIf="creado" class="alert alert-success">{{mensajeApi}}</div>
 
-                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                        <button type="submit" class="btn btn-standar">Send message</button>
 
                       </form>
 
                   </div>
 
-              </div>
           </div>
       </div>
 </section>

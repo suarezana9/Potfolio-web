@@ -50,17 +50,17 @@ let sendEmail = (req,res)=>{
 
     var transporter = nodemailer.createTransport({
        
-        host: "smtp.hostinger.com.ar",
-        port: 587,
+        host: "smtp.gmail.com",
+        port: 465,
         auth:{
-            user:'noreply@suarezana.com',
-            pass:'Anita1234'
+            user:'',
+            pass:''
         }
 
     });
-
+    console.log(transporter);
     const mailOptions = {
-        from: `”${body.name} 👻” <noreply@suarezana.com>`,
+        from: `”${body.name} 👻” <>`,
         to: 'suarezsuarezana20@gmail.com', // Cambia esta parte por el destinatario
         subject: 'Mensaje de prueba - Portfolio Ana Suarez',
         html: `
@@ -68,9 +68,9 @@ let sendEmail = (req,res)=>{
         <strong>E-mail:</strong> ${body.email} <br/>
         <strong>Mensaje:</strong> ${body.message}`
     };
-
+    console.log(mailOptions);
     transporter.sendMail(mailOptions, (err, info) => {
-        
+    
         if(err){
 
             return res.json({

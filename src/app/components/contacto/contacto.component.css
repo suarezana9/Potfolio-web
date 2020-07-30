@@ -103,7 +103,12 @@
 
 
 /*SEND MESSAGE*/
-input, textarea {
+label{
+  color: var(--colorbtn);
+  font-size: 16px;
+  font-weight: bold;
+}
+input, textarea{
     height: 45px;
     border: none;
     border-bottom: 1px solid var(--colorbtn);
