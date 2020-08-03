@@ -50,11 +50,11 @@ let sendEmail = (req,res)=>{
 
     var transporter = nodemailer.createTransport({
        
-        host: "smtp.gmail.com",
-        port: 465,
+        host: "smtp.hostinger.com.ar",
+        port: 587,
         auth:{
-            user:'',
-            pass:''
+            user:'noreply@suarezana.com',
+            pass:'Anita1234'
         }
 
     });

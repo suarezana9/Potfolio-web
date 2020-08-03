@@ -184,6 +184,7 @@ CIRCLES
     text-align: center;
 }
 
+
 .mh-professional-skills h2 {
     font-size: 30px;
     line-height: 40px;
@@ -199,11 +200,14 @@ CIRCLES
     margin-block-start: 1.03em;
     margin-block-end: 1.03em;
 }
+.mh-professional-progress{
+    text-align: center;
+    padding-inline-start: 0px !important;
+}
 
 .mh-professional-progress li {
     display: inline-block;
     margin: 0 auto;
-    margin-bottom: 0px;
     width: 30%;
     margin-bottom: 30px;
     text-align: center;
@@ -240,10 +244,15 @@ CIRCLES
 @media screen and (max-width:480px){
     .mh-professional-progress li {
         width: 50%;
+    
+    }
+    .perfil{
+        margin-left: 0px;
+        text-align: center;
     }
     .perfil img{
         height: 250px;
-        width: 180px;
+        width: 200px !important;
     }
 
 }
@@ -253,9 +262,13 @@ CIRCLES
 .section-title h2 {
     font-size: 20px !important;
 }
+.perfil{
+    margin-left: 0px;
+    text-align: center;
+}
 .perfil img{
     height: 250px;
-    width: 200px;
+    width: 200px !important;
 }
 .perfil h3{
     font-size: 14px; 
@@ -299,7 +312,6 @@ CIRCLES
 .mh-professional-skills h2 {
     font-size: 20px;
 }
-
   }
 
   @media screen and (max-width:768px){

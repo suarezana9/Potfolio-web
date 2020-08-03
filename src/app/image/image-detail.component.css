@@ -113,3 +113,32 @@
   .social-profile a .fa-twitter:hover{
     background: var(--twitter);
   }
+
+/*=============================================
+     MEDIAS QUERYS
+=============================================*/
+@media screen and (max-width:576px){
+    .img-container{
+        min-height: 45vh;
+    }
+    .description p{
+        text-align: center;
+        padding: 18px;
+        font-size: 16px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .caption-row{
+        margin-left: 20px;
+    }
+    .info-icon a{
+        font-size: 14px;
+    }
+    .caption-row .info-icon i{
+        font-size: 16px;
+    }
+    .social-profile a {
+        font-size: 22px;
+    }
+    
+}

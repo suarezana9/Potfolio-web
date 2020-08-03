@@ -322,15 +322,12 @@ bottom: 0;
  @media only screen and (max-width: 405px){
   .banner{
     background-size: cover;
-    height: 90vh;
+    height: 100vh;
     padding: 9rem 3 rem;
     box-sizing: border-box;
   }
   .wave{
-    position: absolute;
-    bottom: 70px !important;
-    
-    
+    display: none;
     }
   .contenido h1{
     font-size: 34px !important;

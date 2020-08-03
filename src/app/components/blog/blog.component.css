@@ -1,6 +1,8 @@
 .container-separator{
-height: 600px;
-background: url("../../../assets/img/block.jpg") no-repeat center center;
-background-size: contain;
+height: 100vh;
+}
+img{
+    margin-top: 200px;
+    height:200px;
 }
 
